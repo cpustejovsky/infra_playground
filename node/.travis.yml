@@ -1,0 +1,7 @@
+sudo: require
+services:
+  - docker
+
+script:
+  - docker build -t cpustejovsky/node_sample/v1 .
+  - docker images pustejovsky/node_sample/v1
